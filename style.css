@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&family=Roboto+Mono&display=swap');
+
+html, body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48, 48, 48);
+    color: lightgray;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    text-align: center;
+    color: lightgray;
+}
+
+.main-container{
+    display: flex;
+    max-width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin: auto;
+}
+
+.calculator{
+    max-width: 300px;
+    width: 100%;
+    background-color: rgb(80,80,80);
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.calButtons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    grid-gap: 5px;
+    padding: 15px;
+}
+
+.calButtons button{
+    background: rgb(96,96,96);
+    color: whitesmoke;
+    border: 5px, none;
+    outline: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 85px;
+    font-size: larger;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.calButtons button:hover{
+    background: rgb(112,112,112);
+    transition-duration: .3;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    border: 20px solid rgb(80,80,80);
+    border-radius: 25px;
+}
+
+.clear{
+    background: rgb(136,8,8) !important;
+}
+
+.operator{
+    background: rgb(112,112,112) !important;
+}
+
+.dot{
+    background: rgb(112,112,112) !important;
+}
+
+.dot:hover {
+    background: rgb(96,96,96) !important;
+}
+
+.operator:hover {
+    background: rgb(96,96,96) !important;
+}
+
+.clear:hover {
+    background: rgb(192,93,71) !important;
+}
+
+input[type="text"] {
+    background-color: rgb(24,24,24);
+    border-radius: 15px;
+    color: whitesmoke;
+    text-align: right;
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
+    width: 275px;
+    height: 75px;
+    padding-right: 10px;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+}
